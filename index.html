@@ -3,9 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Project</title>
+    <link rel="stylesheets" href="style.css">
 </head>
+<style>
+    p {
+    color: blue;
+}
+
+.container p {
+font-weight: bold;
+}
+.active {
+background-color: yellow;
+}
+#menu > li {
+border-bottom: 1px solid gray;
+}
+a:hover {
+color: green;
+}
+li:first-child(2){
+font-style: italic;
+}
+input {
+border: 2px solid red;
+}
+p:nth-child(2) {
+background-color: lightgray;
+}
+button::before{
+    /* content: url(OIP.jfif); */
+    content:  "*";
+    /* width: 10px;
+    height: 10px; */
+    /* margin: 10px; */
+}
+button::after{
+    
+    content: "*";
+    /* margin: 10px; */
+}
+
+
+</style>
 <body>
-    <h2>we are pushing code on github</h2>
+    <h2>Welcome to CSS selectors</h2>
+    <p>This is a paragraph</p>
+    <p class="txt" class="p-txt">This paragraph has two classes</p>
+    <ul class="active" id="menu">
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>contact us</li>
+    </ul>
+    <ul class="active" id="menu">
+        <li>Home-2</li>
+        <li>About-2</li>
+        <li>Services-2</li>
+        <li>contact us-2</li>
+    </ul>
+    <div class="container">
+        <p>This is inside your container</p>
+        <p>This is another paargraph in container</p>
+    </div>
+    <a href="www.google.com">Go to google</a>
+    <input type="text" placeholder="enter your name" width="300px" height="30px">
+    <button type="submit">Submit</button>
 </body>
 </html>
